@@ -60,7 +60,6 @@
 		28592CE71B7B792C00BC1B02 /* WDDeviceShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28592CE51B7B792C00BC1B02 /* WDDeviceShowViewController.m */; };
 		28592CE81B7B792C00BC1B02 /* WDDeviceShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28592CE61B7B792C00BC1B02 /* WDDeviceShowViewController.xib */; };
 		28802BCB1B7A1F7A00D77A48 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28802BCA1B7A1F7A00D77A48 /* SystemConfiguration.framework */; };
-		288033051BBA6BA400C8F726 /* libWilddog_a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 288033041BBA6B8E00C8F726 /* libWilddog_a.a */; };
 		2887FDA71B847385000BDEB5 /* Backicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2887FDA51B847385000BDEB5 /* Backicon@2x.png */; };
 		2887FDA81B847385000BDEB5 /* Backicon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2887FDA61B847385000BDEB5 /* Backicon@3x.png */; };
 		2887FDAF1B84B717000BDEB5 /* back_iphone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2887FDAE1B84B717000BDEB5 /* back_iphone5.png */; };
@@ -127,6 +126,8 @@
 		28F9962C1B8C92DA00FAD889 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F996241B8C92DA00FAD889 /* TencentOpenAPI.framework */; };
 		28F996361B8C930300FAD889 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F996331B8C930300FAD889 /* Reachability.m */; };
 		395CE3101B7C9E1F007718D1 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3984E0E51B7B86C10093331D /* ImageIO.framework */; };
+		396FC9081BBABF7C0025469E /* Wilddog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396FC9071BBABF7C0025469E /* Wilddog.framework */; settings = {ASSET_TAGS = (); }; };
+		396FC90A1BBABF830025469E /* Wilddog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 396FC9071BBABF7C0025469E /* Wilddog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3984E0B11B7B1D950093331D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3984E0B01B7B1D950093331D /* Security.framework */; };
 		3984E0B31B7B1DAF0093331D /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3984E0B21B7B1DAF0093331D /* libiconv.dylib */; };
 		3984E0B51B7B1DC90093331D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3984E0B41B7B1DC90093331D /* CoreGraphics.framework */; };
@@ -136,39 +137,21 @@
 		3984E0BD1B7B1DFC0093331D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3984E0BC1B7B1DFC0093331D /* libz.dylib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2805E8281BAABD9E00360AC5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2805E8221BAABD9D00360AC5 /* Wilddog.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EA26CEFD1B67A33C00AF3561;
-			remoteInfo = Wilddog;
+/* Begin PBXCopyFilesBuildPhase section */
+		396FC90B1BBABF830025469E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				396FC90A1BBABF830025469E /* Wilddog.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2805E82A1BAABD9E00360AC5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2805E8221BAABD9D00360AC5 /* Wilddog.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EA26CF081B67A33C00AF3561;
-			remoteInfo = WilddogTests;
-		};
-		288033031BBA6B8E00C8F726 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2805E8221BAABD9D00360AC5 /* Wilddog.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EA0F70E11BB28622002D9F75;
-			remoteInfo = Wilddog_a;
-		};
-		288033061BBA6BA800C8F726 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2805E8221BAABD9D00360AC5 /* Wilddog.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EA0F70E01BB28622002D9F75;
-			remoteInfo = Wilddog_a;
-		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2805E8221BAABD9D00360AC5 /* Wilddog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Wilddog.xcodeproj; path = ../../../Wilddog/Wilddog.xcodeproj; sourceTree = "<group>"; };
 		2811C7631B745DF3003961D0 /* DAContextMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAContextMenuCell.h; sourceTree = "<group>"; };
 		2811C7641B745DF3003961D0 /* DAContextMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAContextMenuCell.m; sourceTree = "<group>"; };
 		2811C76B1B745F5B003961D0 /* DAContextMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAContextMenuTableViewController.h; sourceTree = "<group>"; };
@@ -334,6 +317,7 @@
 		28F996271B8C92DA00FAD889 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		28F996321B8C930300FAD889 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		28F996331B8C930300FAD889 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		396FC9071BBABF7C0025469E /* Wilddog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Wilddog.framework; path = ../../../../../../Downloads/WilddogSDK_0.8.0/WilddogSDK_0.8.0/Wilddog.framework; sourceTree = "<group>"; };
 		3984E0B01B7B1D950093331D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		3984E0B21B7B1DAF0093331D /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		3984E0B41B7B1DC90093331D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -355,7 +339,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				288033051BBA6BA400C8F726 /* libWilddog_a.a in Frameworks */,
 				395CE3101B7C9E1F007718D1 /* ImageIO.framework in Frameworks */,
 				28937DEA1BB0335E00D1D58C /* libWeiboSDK.a in Frameworks */,
 				3984E0B51B7B1DC90093331D /* CoreGraphics.framework in Frameworks */,
@@ -367,6 +350,7 @@
 				3984E0B71B7B1DDE0093331D /* libsqlite3.dylib in Frameworks */,
 				3984E0B51B7B1DC90093331D /* CoreGraphics.framework in Frameworks */,
 				28802BCB1B7A1F7A00D77A48 /* SystemConfiguration.framework in Frameworks */,
+				396FC9081BBABF7C0025469E /* Wilddog.framework in Frameworks */,
 				3984E0B31B7B1DAF0093331D /* libiconv.dylib in Frameworks */,
 				3984E0B11B7B1D950093331D /* Security.framework in Frameworks */,
 				3984E0BB1B7B1DF30093331D /* libstdc++.dylib in Frameworks */,
@@ -383,16 +367,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2805E8231BAABD9D00360AC5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				288033041BBA6B8E00C8F726 /* libWilddog_a.a */,
-				2805E82B1BAABD9E00360AC5 /* WilddogTests.xctest */,
-				2805E8291BAABD9E00360AC5 /* Wilddog.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		2811C7701B74693D003961D0 /* ThirdSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -690,7 +664,6 @@
 			isa = PBXGroup;
 			children = (
 				28937DDD1BB0335D00D1D58C /* libWeiboSDK */,
-				2805E8221BAABD9D00360AC5 /* Wilddog.xcodeproj */,
 				28F9962E1B8C930300FAD889 /* 快连 */,
 				28F996161B8C92DA00FAD889 /* libWeChatSDK.a */,
 				28F996231B8C92DA00FAD889 /* TencentOpenApi_IOS_Bundle.bundle */,
@@ -705,6 +678,7 @@
 		3984E0CB1B7B2D360093331D /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				396FC9071BBABF7C0025469E /* Wilddog.framework */,
 				3984E0EB1B7B86F50093331D /* Foundation.framework */,
 				3984E0E91B7B86E80093331D /* UIKit.framework */,
 				3984E0E71B7B86DE0093331D /* CoreText.framework */,
@@ -735,11 +709,11 @@
 				288BB9931B73455B007D1403 /* Sources */,
 				288BB9941B73455B007D1403 /* Frameworks */,
 				288BB9951B73455B007D1403 /* Resources */,
+				396FC90B1BBABF830025469E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				288033071BBA6BA800C8F726 /* PBXTargetDependency */,
 			);
 			name = WDIntelligentBulb;
 			productName = WDIntelligentBulb;
@@ -772,42 +746,12 @@
 			mainGroup = 288BB98E1B73455B007D1403;
 			productRefGroup = 288BB9981B73455B007D1403 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 2805E8231BAABD9D00360AC5 /* Products */;
-					ProjectRef = 2805E8221BAABD9D00360AC5 /* Wilddog.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				288BB9961B73455B007D1403 /* WDIntelligentBulb */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		2805E8291BAABD9E00360AC5 /* Wilddog.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Wilddog.framework;
-			remoteRef = 2805E8281BAABD9E00360AC5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2805E82B1BAABD9E00360AC5 /* WilddogTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = WilddogTests.xctest;
-			remoteRef = 2805E82A1BAABD9E00360AC5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		288033041BBA6B8E00C8F726 /* libWilddog_a.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libWilddog_a.a;
-			remoteRef = 288033031BBA6B8E00C8F726 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		288BB9951B73455B007D1403 /* Resources */ = {
@@ -940,14 +884,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		288033071BBA6BA800C8F726 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Wilddog_a;
-			targetProxy = 288033061BBA6BA800C8F726 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		288BB9A41B73455B007D1403 /* Main.storyboard */ = {
