@@ -1,0 +1,30 @@
+//
+//  WDIntelligentBulb.pch
+//  WDIntelligentBulb
+//
+//  Created by IMacLi on 15/8/7.
+//  Copyright (c) 2015年 liwuyang. All rights reserved.
+//
+
+#ifndef WDIntelligentBulb_WDIntelligentBulb_pch
+#define WDIntelligentBulb_WDIntelligentBulb_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define     SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
+#define     SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
+
+#define   UserDefaults   [NSUserDefaults standardUserDefaults]
+
+#define    UID         @"uid"
+#define    TOKEN       @"token"
+
+
+//"写入Key"
+#define    QQ_KEY         @""
+
+#define    WB_KEY         @""
+
+#define    WX_KEY         @""
+
+#endif
