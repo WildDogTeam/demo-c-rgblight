@@ -3,9 +3,9 @@ CONFIG_AP_PASSPHRASE = "12345678"
 WLAN_MAC_ADDRESS     = "\x02\x0A\xF7\x00\x00\x01"
 STORED_AP_INFO =
     {
-        .details.SSID        = {sizeof("wilddog")-1,"wilddog"},
-        .security_key        = "orangeline",
-        .security_key_length = sizeof("orangeline")-1,
+        .details.SSID        = {sizeof("ssid")-1,"ssid"},
+        .security_key        = "password",
+        .security_key_length = sizeof("password")-1,
         .details.security    = WICED_SECURITY_WPA2_MIXED_PSK,
     }
 MFG_INFO=
