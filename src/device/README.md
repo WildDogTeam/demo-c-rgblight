@@ -47,10 +47,10 @@ rgblight应用代码位于software/examples/wiced目录下，下面是该目录�
 
 ##2.配置说明
 ### 2.1 网络配置
-用例需要连接路由并在云端URL建立智能彩灯节点并订阅。用户可以修改`wilddog_demo_config.h`配置：
+用例需要连接路由，在云端URL建立智能彩灯节点并订阅。用户可以修改`wilddog_demo_config.h`配置：
 
 - `YOUR_APPID` ： 用例使用的APPID.
-- `YOUR_DEVICE_NAME` : 设备序号.
+- `YOUR_DEVICE_NAME` : 设备特征码（编号或名称）.
 
 ###2.2 wiced板硬件配置
 1. 恢复出厂的`GPIO`口在`demo_platform.h`声明为`WICED_GPIO_2`，用户可以根据自己的需要修改，注意恢复出厂的`GPIO`必须能响应外部中断.
@@ -67,10 +67,10 @@ rgblight应用代码位于software/examples/wiced目录下，下面是该目录�
 
 1. 把`demo-c-rgblight/src/device/software`拷贝到`WICED-SDK-x.x.x\WICED-SDK\apps`目录下
 2. 配置`software/examples/wiced/wilddog_demo_config.h`。
-3. 在WICED-IDE上建立Target-`software.project.wiced-<yourplatform> download run`（我们这是使用的是WSDB750，所以Target为 `software.project.wiced-WSDB750 JTAG=ftdi_swd download_apps download  run`）。
+3. 在WICED-IDE上建立Target-`software.project.wiced-<yourplatform> download run`（WSDB750开发板采用外接flash，因此Target为 `software.project.wiced-WSDB750 JTAG=ftdi_swd download_apps download  run`）。
 
 
-	**注意**：在`WSDB750`烧录前需要安装`WICED-SDK\tools\drivers\BCM9WCD1EVAL1_Drivers_patch_SWD\InstallDriver.exe`。
+	**注意**：使用`WSDB750`开发板时，烧录前需要安装`WICED-SDK\tools\drivers\BCM9WCD1EVAL1_Drivers_patch_SWD\InstallDriver.exe`。
 
 4. 双击Target，编译并下载运行，同时打开串口工具，波特率设置为115200-8-n-1，查看运行的log输出。
 
@@ -84,7 +84,7 @@ rgblight应用代码位于software/examples/wiced目录下，下面是该目录�
 
 ##5. 其他
 ###5.1 恢复出厂设置
-恢复出厂的`GPIO`持续接地超过`5s`，wiced清除连接的`ssid`相关信息和清除绑定信息，并重启等待配置。烧录完成后，开发板第一次启动，默认进入等待配置状态。
+恢复出厂的`GPIO`持续接地超过`5s`，wiced清除连接的`ssid`相关信息和清除绑定信息，并重启等待配置。烧录完成后，开发板重新启动，默认进入等待配置状态。
 
 ###5.2配置智能彩灯指示状态信息
 
