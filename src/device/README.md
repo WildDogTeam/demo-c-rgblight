@@ -3,6 +3,8 @@
 该用例展示如何在wiced平台上编译，运行智能彩灯.
 ##1.文件结构和说明
 	
+rgblight应用代码位于software/examples/wiced目录下，下面是该目录中源文件的结构：
+
 		.
 		├── akiss.c
 		├── akiss.h
